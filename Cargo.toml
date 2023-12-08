@@ -1,0 +1,18 @@
+[package]
+name = "leafhttp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.4.11", features = ["derive"] }
+confy = { version = "0.5.1", default-features = false, features = [
+    "yaml_conf",
+] }
+home-dir = "0.1.0"
+log = { version = "0.4.20", features = ["std"] }
+mime_guess = { version = "2.0.4", default-features = false }
+serde = { version = "1.0.193", features = ["derive"] }
+simple_logger = { version = "4.3.0", features = ["threads", "stderr"] }
+
+[dev-dependencies]
+maplit = "1.0.2"

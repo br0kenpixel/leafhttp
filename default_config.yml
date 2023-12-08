@@ -1,0 +1,27 @@
+# Address and port for the server to listen on
+address: "127.0.0.1"
+port: 8080
+
+# Path to the directory to serve files from
+www-dir: "www"
+
+# Index file to serve when the root path is requested
+index-file: "index.html"
+
+# Whether to allow path traversal
+path-traversal: false
+
+# What to do when path traversal is detected
+# - "KICK": Immediately close the socket connection
+# - "NOT_FOUND": Return a 404 Not Found error
+# - "FORBIDDEN": Return a 403 Forbidden error
+path-traversal-action: "KICK"
+
+# Maximum number of concurrent connections
+max-connections: 4
+
+# Maximum size of a request in bytes (default: 10 MiB)
+max-request-size: 10485760
+
+# Accepted HTTP versions
+allow-http-versions: [1, 2]
