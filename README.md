@@ -1,4 +1,4 @@
-# LeafHttp Web Server
+# LeafHttp Web Server
 LeafHttp is a simple configurable web server.
 
 ```
@@ -28,7 +28,7 @@ LeafHttp is a simple configurable web server.
 - `max-request-size` counts the __entire__ request, not just the body.
 - The request body __must__ contain valid UTF-8 characters. The server will respond with a 501 if you send a body with non-UTF-8 characters.
 
-# Client handling
+# Client handling
 Every client is handled in a separate thread. When the connection limit is reached, the socket is immediately closed.
 
 # Configuration
