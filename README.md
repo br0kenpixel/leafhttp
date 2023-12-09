@@ -32,7 +32,7 @@ LeafHttp is a simple configurable web server.
 Every client is handled in a separate thread. When the connection limit is reached, the socket is immediately closed.
 
 # Configuration
-See [default_config.yml].
+See [default_config.yml](default_config.yml).
 
 # Cross-compiling
 Since `home_dir` depends on [`nix`](https://crates.io/crates/nix), you may get some linker errors.
